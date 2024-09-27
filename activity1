@@ -1,0 +1,26 @@
+using System;
+
+namespace Activity1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("\n\n\n\t\t\t\tThe program asks you to input Resistance (R) and Amperes (I) and compute the equations.");
+
+            Double Resistance;
+            Double Amperes;
+            Double Voltage;
+
+            Console.Write("\n\n\n\t\t\t\t\t\t\tEnter value of Resistance: ");
+            Resistance = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("\n\n\n\t\t\t\t\t\t\tEnter value of Amperes: ");
+            Amperes = Convert.ToDouble(Console.ReadLine());
+            Voltage = Amperes * Resistance;
+
+            Console.Write("\n\n\n\t\t\t\t\t\t\tThe Computed Voltage= {0:F2}", Voltage);
+            Console.ReadKey();
+        }
+    }
+}
